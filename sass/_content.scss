@@ -1,0 +1,197 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+
+    font-size: 62.5%;       //1rem = 10px/16px = 62.5% -> 1rem = 10px 
+}
+
+body {
+    background-color: hsl(204, 43%, 93%);
+
+    @media only screen and (max-width: 40em) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding: 10rem 4rem;
+    }
+
+
+}
+
+.content {
+    max-width: 50rem;
+    overflow: hidden;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    border-radius: 8px;
+
+    box-shadow: 0 1.5rem 4rem rgba(1,1,1, .15);
+
+    @media only screen and (max-width: 40em) {
+        
+            position: relative;
+            top: 0;
+            left: 0;
+            transform: translate(0);
+
+    }
+}
+
+.community {
+    background-color: white;
+    padding:  3.5rem;
+
+    @media only screen and (max-width: 40em) {
+        padding: 3.5rem 3.2rem 3.5rem 3.2rem;
+    }
+
+
+    &__heading-2 {
+        font-size: 1.6rem;
+        color: hsl(218, 22%, 67%);
+        margin-bottom: 1.5rem;
+        font-family: "Karla";
+        font-weight: 700;
+    }
+    
+    &__heading-3 {
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: hsl(71, 73%, 54%);
+        font-family: "Karla";
+        margin-bottom: 1.2rem;
+    }
+
+    &__paragraph {
+        font-size: 1.2rem;
+        line-height: 2;
+        font-family: "Karla";
+        font-weight: 700;
+        color: hsl(179, 62%, 43%);
+    }
+}
+
+
+.subscription {
+    display: flex;
+
+    @media only screen and (max-width: 40em) {
+        flex-direction: column;
+    }
+
+
+    &-left {
+        background-color: hsl(179, 62%, 43%);
+        width: 50%;
+        padding: 2.3rem 3.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        @media only screen and (max-width: 40em) {
+            padding: 3.5rem 2.2rem 3.5rem 2.2rem;
+            width: 100%;
+        }
+
+
+        &__header-3 {
+            color: white;
+            font-size: 1.4rem;
+            font-family: "Karla";
+            font-weight: 400;
+        }
+
+
+        &__money {
+            font-size: 2.8rem;
+            color: white;
+            font-family: "Karla";
+
+            font-weight: 700;
+        }
+
+        &__month {
+            font-size: 1.2rem;
+            color: hsl(218, 22%, 67%);
+            font-family: "Karla";
+
+            font-weight: 700;
+            margin-left: 1rem;
+        }
+
+        &__paragraph {
+            color: white;
+            font-size: 1.4rem;
+            font-family: "Karla";
+        }
+
+        &__btn {
+            border: none;
+            border-radius: 5px;
+            padding: 1.2rem 1.5rem;
+            background-color: hsl(71, 73%, 54%);
+
+            color: white;
+            font-family: "Karla";
+            font-weight: 700;
+
+        }
+
+    }
+
+    &-right {
+        background-color: hsl(218, 22%, 67%);
+        width: 50%;
+        padding: 2.3rem 3.5rem;
+
+        @media only screen and (max-width: 40em) {
+            padding: 3.5rem 2.2rem 1.5rem 2.2rem;
+            width: 100%;
+        }
+
+        &__paragraph {
+            color: white;
+            font-family: "karla";
+            font-weight: 100;
+            font-size: 1rem;
+        }
+
+    }
+
+    
+
+
+}
+
+//Helper classes
+.mb-sm {
+    margin-bottom: .4rem;
+}
+
+.mb {
+    margin-bottom: 1rem;
+}
+
+.mb-md {
+    margin-bottom: 1.5rem;
+}
+
+.mb-lg {
+    margin-bottom: 2.2rem;
+}
+
+.mb-hg {
+    margin-bottom: 8rem;
+}
+

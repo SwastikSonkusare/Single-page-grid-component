@@ -1,0 +1,23 @@
+{
+  "name": "single-price-grid-component-master",
+  "version": "1.0.0",
+  "description": "Grid component",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "compile:sass": "node-sass main.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SwastikSonkusare/Single-page-grid-component.git"
+  },
+  "author": "Swastik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SwastikSonkusare/Single-page-grid-component/issues"
+  },
+  "homepage": "https://github.com/SwastikSonkusare/Single-page-grid-component#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.0"
+  }
+}
